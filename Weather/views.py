@@ -6,7 +6,7 @@ import requests
 
 def weather_info(request):
     if request.method == "POST":
-        api_key = "60e71ef363261de7d092343233068828"
+        api_key = "Your API KEY"
         city = request.POST.get('cityname')
         url = f"https://api.openweathermap.org/data/2.5/weather?q={city}&appid={api_key}"
         response = requests.get(url)
